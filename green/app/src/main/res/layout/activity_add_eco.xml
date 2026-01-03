@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    >
+
+    <!-- 顶部导航栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_arrow_right"
+            android:padding="0dp"
+            android:layout_marginLeft="0dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加活动记录"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!-- 活动名称 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动名称:"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/et_activity_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:hint="例如：节约用水、清洁垃圾等"
+            android:layout_margin="16dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- 活动内容 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动内容:"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#333333"
+            android:paddingBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/et_activity_content"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:hint="请描述你做了什么..."
+            android:textSize="16sp"
+            android:layout_margin="16dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"/>
+    </LinearLayout>
+
+    <!-- 活动时间 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动持续时间:"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:paddingBottom="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_time_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_margin="16dp"
+            android:padding="12dp">
+
+            <RadioButton
+                android:id="@+id/rb_less_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30分钟以内 (20积分)"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_30_60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30-60分钟 (50积分)"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_more_60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60分钟以上 (70积分)"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- 提交按钮 -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交记录"
+        android:background="#22c55e"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+
+    <!-- 顶部导航栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_arrow_right"
+            android:padding="0dp"
+            android:layout_marginLeft="0dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布活动"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!-- 活动表单 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/et_activity_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:hint="请输入活动名称"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:drawableLeft="@drawable/ic_bg_tmp"
+            android:drawablePadding="12dp"/>
+
+        <EditText
+            android:id="@+id/et_activity_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:hint="请详细描述活动内容..."
+            android:textSize="16sp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/et_activity_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:hint="请输入活动地点"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:drawableLeft="@drawable/ic_bg_tmp"
+            android:drawablePadding="12dp"/>
+
+        <EditText
+            android:id="@+id/et_activity_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:hint="请输入活动人数"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:drawableLeft="@drawable/ic_bg_tmp"
+            android:drawablePadding="12dp"/>
+
+        <EditText
+            android:id="@+id/et_activity_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:hint="请选择活动日期"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="false"
+            android:layout_marginBottom="16dp"
+            android:drawableLeft="@drawable/ic_bg_tmp"
+            android:drawablePadding="12dp"
+            android:drawableRight="@drawable/ic_bg_tmp"/>
+
+        <Button
+            android:id="@+id/btn_publish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发布活动"
+            android:background="#22c55e"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+</LinearLayout>

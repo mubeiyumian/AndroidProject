@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="首页" />
+    <item
+        android:id="@+id/nav_carbon"
+        android:icon="@drawable/ic_carbon"
+        android:title="碳足迹" />
+    <item
+        android:id="@+id/nav_public"
+        android:icon="@drawable/ic_public"
+        android:title="公益" />
+    <item
+        android:id="@+id/nav_my"
+        android:icon="@drawable/ic_mine"
+        android:title="我的" />
+</menu>

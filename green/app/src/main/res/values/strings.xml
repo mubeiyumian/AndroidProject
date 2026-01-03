@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">green</string>
+    <!-- 个人信息页面 -->
+    <string name="user_info_title">个人信息</string>
+    <string name="user_info_avatar">我的头像</string>
+    <string name="user_info_username">我的名称</string>
+    <string name="user_info_phone">我的手机号</string>
+    <string name="user_info_password">我的密码</string>
+    <string name="edit_username">修改用户名</string>
+    <string name="edit_phone">修改手机号</string>
+    <string name="edit_password">修改密码</string>
+    <string name="old_password">请输入旧密码</string>
+    <string name="new_password">请输入新密码</string>
+    <string name="confirm_password">请再次输入新密码</string>
+    <string name="username_updated">用户名已更新</string>
+    <string name="phone_updated">手机号已更新</string>
+    <string name="password_updated">密码已更新</string>
+    <string name="empty_content_error">内容不能为空</string>
+    <string name="old_password_error">旧密码不正确</string>
+    <string name="password_mismatch_error">两次输入的密码不一致</string>
+</resources>
